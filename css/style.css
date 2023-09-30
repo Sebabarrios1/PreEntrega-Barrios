@@ -10,7 +10,7 @@
 }
 
 /*general*/
-html, body, #container{
+html, body, #container {
     width: 100%;
     height: 100%;
 }
@@ -79,6 +79,12 @@ h2{
     border-radius: 20%;
 }
 
+.navIndex div{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
 .footerIndex{
     grid-area: footer;
     display: grid;
@@ -140,3 +146,219 @@ h2{
 
 
 }
+
+
+/*grid productos*/
+
+
+
+#container2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas:
+    "header"
+    "nav"
+    "footer";
+    
+}
+
+
+.headerProd{
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.headerProd a{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.headerProd img{
+    width: 150px;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+
+
+.navProd{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.navProd a{
+    text-decoration: none;
+    color: #1c0c4f;
+}
+
+.navProd img{
+    width: 100px;
+    border-radius: 20%;
+}
+
+.navProd div{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.footerProd{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    
+
+}
+
+.footerProd img{
+    width: 25px;
+    height: 35px;
+    margin-right: 10%;
+}
+
+@media(width>= 800px){
+
+
+    .headerProd img{
+        width: 200px;
+        border-radius: 20%;
+        margin-top: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .headerProd a img{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .navProd{
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100%;
+        justify-items: center;
+        align-items: center;
+       
+        
+    }
+
+    .navProd h2{
+        font-size: 200%;
+    }
+
+    .navProd img{
+        width: 150px;
+        border-radius: 20%;
+    }
+
+    .footerProd img{
+        width: 50px;
+        height: 70px;
+        margin-right: 10%;
+
+    }
+
+    .footerProd h5{
+        font-size: 150%;
+    }
+
+
+}
+
+
+/*flex envios*/
+
+#container3{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas:
+    "header"
+    "nav"
+    "footer";
+}
+
+.headerFoot{
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.headerFoot a{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.headerFoot img{
+    width: 150px;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+
+.navFoot{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.navFoot form{
+    width: 700px;
+    height: 50%;
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.tag{
+    margin: 5px;
+    border: 2px solid #210386 ;
+    border-radius: 10%;
+    padding-left: 5px;
+}
+
+.botones{
+    background-color: aqua ;}
+
+    .footerFoot{
+         display: grid;
+    justify-items: normal;
+    align-items: center; 
+     
+    }
+    
+    .footerFoot img{
+        width: 50px;
+        height: 70px;
+        margin-right: 10%;
+
+    }
+
+    .footerFoot h5{
+        width: auto;
+        font-size: 100%;
+    }
