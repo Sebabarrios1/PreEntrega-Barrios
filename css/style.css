@@ -23,10 +23,12 @@ body{
 
 h1{
     color: #120639;
+    text-shadow: 0 0 5px #055dff;
 }
 
 h2{
     color: #1c0c4f;
+    text-shadow: 0 0 5px #055dff;
 }
 
 /*grid inicio*/
@@ -83,6 +85,12 @@ h2{
     display: grid;
     justify-items: center;
     align-items: center;
+}
+
+.navIndex div:hover{
+    box-shadow: 0 0 15px #210386;
+    border-radius: 15%;
+    width: auto;
 }
 
 .footerIndex{
@@ -198,7 +206,13 @@ h2{
     
 }
 
-.navProd a{
+.navProd div:hover{
+    box-shadow: 0 0 15px #210386;
+    border-radius: 15%;
+    width: auto;
+}
+
+.headerProd a{
     text-decoration: none;
     color: #1c0c4f;
 }
@@ -311,13 +325,18 @@ h2{
     display: grid;
     justify-items: center;
     align-items: center;
+    text-decoration: none;
+    color: #1c0c4f;
 }
+
+
 
 .headerFoot img{
     width: 150px;
     border-radius: 20%;
     margin-top: 20px;
 }
+
 
 
 .navFoot{
