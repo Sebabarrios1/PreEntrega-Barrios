@@ -1,0 +1,142 @@
+@font-face {
+    font-family:"ADLaM_Display" ;
+    src: url(../assets/tipografia/ADLaMDisplay-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*general*/
+html, body, #container{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family:"ADLaM_Display" ;
+    background-image: url(../assets/imagenes/fondo.png) ;
+    background-size: cover;
+}
+
+h1{
+    color: #120639;
+}
+
+h2{
+    color: #1c0c4f;
+}
+
+/*grid inicio*/
+
+#container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas:
+    "header"
+    "nav"
+    "footer";
+    
+}
+
+
+.headerIndex{
+    grid-area: header;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+   
+}
+
+
+.headerIndex img{
+    width: 150px;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+
+.navIndex{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.navIndex a{
+    text-decoration: none;
+    color: #1c0c4f;
+}
+
+.navIndex img{
+    width: 100px;
+    border-radius: 20%;
+}
+
+.footerIndex{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    
+
+}
+
+.footerIndex img{
+    width: 25px;
+    height: 35px;
+    margin-right: 10%;
+}
+
+@media(width>= 800px){
+
+
+    .headerIndex img{
+        width: 200px;
+        border-radius: 20%;
+        margin-top: 20px;
+    }
+
+    .navIndex{
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100%;
+        justify-items: center;
+        align-items: center;
+       
+        
+    }
+
+    .navIndex h2{
+        font-size: 200%;
+    }
+
+    .navIndex img{
+        width: 150px;
+        border-radius: 20%;
+    }
+
+    .footerIndex img{
+        width: 50px;
+        height: 70px;
+        margin-right: 10%;
+
+    }
+
+    .footerIndex h5{
+        font-size: 150%;
+    }
+
+
+}
